@@ -2,8 +2,8 @@
     {
         "name": "Prod1",
         "image": "",
-        "price": "100",
-        "discountedPrice": "80"
+        "price": "420",
+        "discountedPrice": "380"
     },
     {
         "name": "Prod2",
