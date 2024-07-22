@@ -2,26 +2,27 @@ import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 import products from "./products.json";
 
+document.addEventListener("DOMContentLoaded", () => {
+  const swiperContainer = document.getElementById("product-container");
+  const template = document.getElementById("product-template").content;
 
-const swiperContainer = document.querySelector('.swiper-wrapper');
+  products.forEach((product) => {
+    const slide = document.importNode(template, true);
+    slide.querySelector("img").src = product.image;
+    slide.querySelector("img").alt = product.name;
+    slide.querySelector(".product-name").textContent = product.name;
+    slide.querySelector(".product-price").textContent = `$${product.price}`;
+    slide.querySelector(
+      ".product-discounted-price"
+    ).textContent = `$${product.discountedPrice}`;
+    swiperContainer.appendChild(slide);
+  });
 
-products.forEach(product => {
-  const slide = document.createElement('div');
-  slide.classList.add('swiper-slide');
-  slide.innerHTML = `
-    <img src="${product.image}" alt="${product.name}">
-    <div class="product-name">${product.name}</div>
-    <div class="product-price">$${product.price}</div>
-    <div class="product-discounted-price">$${product.discountedPrice}</div>
-    <button class="action-button">Add to Cart</button>
-  `;
-  swiperContainer.appendChild(slide);
-});
-
-const swiper = new Swiper('.swiper-container', {
+  new Swiper(".swiper-container", {
     loop: true,
     navigation: {
-        nextEl: 'swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
+  });
 });

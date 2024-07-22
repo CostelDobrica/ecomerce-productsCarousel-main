@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecomerce-productCarousel</title>
-</head>
-<body>
-   <div class="swiperContainer">
-    <div class="swiperWrapper">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Carousel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper" id="product-container"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
-    <button class="buttonNext"></button>
-    <button class="buttonPrev"></button>
-   </div> 
-   ><script type="module" src="main.js"></script>
-</body>
+
+    <template id="product-template">
+      <div class="swiper-slide">
+        <img src="{{image}}" alt="{{name}}" />
+        <div class="product-name">{{name}}</div>
+        <div class="product-price">${{price}}</div>
+        <div class="product-discounted-price">${{discountedPrice}}</div>
+        <button class="action-button">Add to Cart</button>
+      </div>
+    </template>
+
+    <script type="module" src="main.js"></script>
+  </body>
 </html>

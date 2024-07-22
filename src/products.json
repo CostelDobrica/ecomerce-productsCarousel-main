@@ -1,38 +1,38 @@
 [
-    {
-        "name": "Prod1",
-        "image": "",
-        "price": "420",
-        "discountedPrice": "380"
-    },
-    {
-        "name": "Prod2",
-        "image": "",
-        "price": "200",
-        "discountedPrice": "180"
-    },
-    {
-        "name": "Prod3",
-        "image": "",
-        "price": "300",
-        "discountedPrice": "260"
-    },
-    {
-        "name": "Prod4",
-        "image": "",
-        "price": "30",
-        "discountedPrice": "27"
-    },
-    {
-        "name": "Prod5",
-        "image": "",
-        "price": "70",
-        "discountedPrice": "62"
-    },
-    {
-        "name": "Prod6",
-        "image": "",
-        "price": "600",
-        "discountedPrice": "510"
-    }
+  {
+    "name": "Prod1",
+    "image": "https://www.enzobertini.ro/img/cache/premiata/barbati/pantofi/sneakers-barba-i-premiata-mase-gri-din-piele-intoarsa-i-textil-169ebp6627vgr-c37b21_adaptive_1024x768.png",
+    "price": "420",
+    "discountedPrice": "380"
+  },
+  {
+    "name": "Prod2",
+    "image": "https://www.benvenuti.com/img/cache/benvenuti/femei/pantofi/sneakers-chunky-femei-benvenuti-gri-din-piele-i-textil-127dp1670gr-b02110_adaptive_1024x768.png",
+    "price": "200",
+    "discountedPrice": "180"
+  },
+  {
+    "name": "Prod3",
+    "image": "https://img.modivo.cloud/product(f/7/3/a/f73ad22758a77ac88394e9d3f707985c601e4bc5_03_0000302084685_ph.jpg,jpg)/karl-lagerfeld-sneakers-kl62930n-negru.jpg",
+    "price": "300",
+    "discountedPrice": "260"
+  },
+  {
+    "name": "Prod4",
+    "image": "https://www.enzobertini.ro/img/cache/premiata/barbati/pantofi/sneakers-barba-i-premiata-mase-gri-din-piele-intoarsa-i-textil-169ebp6627vgr-c37b21_adaptive_1024x768.png",
+    "price": "30",
+    "discountedPrice": "27"
+  },
+  {
+    "name": "Prod5",
+    "image": "https://img.modivo.cloud/product(f/7/3/a/f73ad22758a77ac88394e9d3f707985c601e4bc5_03_0000302084685_ph.jpg,jpg)/karl-lagerfeld-sneakers-kl62930n-negru.jpg",
+    "price": "70",
+    "discountedPrice": "62"
+  },
+  {
+    "name": "Prod6",
+    "image": "https://img.modivo.cloud/product(f/7/3/a/f73ad22758a77ac88394e9d3f707985c601e4bc5_03_0000302084685_ph.jpg,jpg)/karl-lagerfeld-sneakers-kl62930n-negru.jpg",
+    "price": "600",
+    "discountedPrice": "510"
+  }
 ]
