@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Carousel</title>
+    <script type="module" crossorigin src="./assets/index-D4k-yHMX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CcDQnTpd.css">
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper" id="product-container"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <template id="product-template">
+      <div class="swiper-slide">
+        <img src="{{image}}" alt="{{name}}" />
+        <div class="product-name">{{name}}</div>
+        <div class="product-price">${{price}}</div>
+        <div class="product-discounted-price">${{discountedPrice}}</div>
+        <button class="action-button">Add to Cart</button>
+      </div>
+    </template>
+
+  </body>
+</html>
